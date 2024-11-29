@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 375px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.description h1 {
+    font-weight: 200;
+}
+
+.description p {
+    font-weight: 600;
+}
+
+.description2 {
+    margin-top: 1rem;
+    width: 85%;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.items {
+    display: grid;
+    list-style: none;
+    justify-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .content {
+        max-width: 1024px
+    }
+
+    .items {
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat (4, 125px);
+    }
+
+    .description2 {
+        max-width: 60%;
+    }
+
+    .supervisor, .calculator {
+        grid-row: 2 / 4;
+    }
+
+    .team {
+        grid-row: 1 / 3;
+    }
+
+    .karma {
+        grid-row: 3/5;
+    }
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 8px 0 hsl(229, 6%, 66%);
+    border-radius: .5rem;
+}
+
+.supervisor {
+    border-top: solid 4px hsl(180, 62%, 55%);
+}
+
+.team {
+    border-top: solid 4px hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: solid 4px hsl(34, 97%, 64%)
+}
+
+.calculator {
+    border-top: solid 4px hsl(212, 86%, 64%)
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.card img {
+    align-self: flex-end;
+    max-width: 50px;
+}
+
+
+.attribution { 
+    margin: 1rem;
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
